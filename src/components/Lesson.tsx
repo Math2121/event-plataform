@@ -21,8 +21,7 @@ function Lesson({ available_at, slugLesson, title, type }: ILessonProps) {
   );
   return (
     <Link to={`/event/lesson/${slugLesson}`} className="group">
-      <span className="text-gray-300">{availableDateFormat}</span>` $
-      {isActiveLesson ? "bg-green-500" : ""}`
+      <span className="text-gray-300">{availableDateFormat}</span>
       <div
         className={classNames(
           "rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500",
